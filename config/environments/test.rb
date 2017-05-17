@@ -1,7 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  AltFuelFinder::Application.configure do |config|
+  Module3Diagnostic::Application.configure do |config|
     # Access to rack session
     config.middleware.use RackSessionAccess::Middleware
   end
