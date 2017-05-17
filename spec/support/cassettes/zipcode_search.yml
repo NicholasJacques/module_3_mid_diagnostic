@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest?api_key=BY2X2d5yFomckQzWWekeYdeWSXPAVgW5XleSP3Ui&format=json&fuel_type=ELEC,LPG&limit=10&location=80210&radius=6.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 17 May 2017 17:05:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Origin
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '980'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Last-Modified:
+      - Wed, 17 May 2017 17:05:38 GMT
+      X-Request-Id:
+      - 60ffb06e-23ab-4c18-85ec-2bbe106db024
+      X-Runtime:
+      - '0.009901'
+      Age:
+      - '0'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":39.679179,"longitude":-104.963089,"precision":{"types":["postal_code"],"name":"postal_code","value":5},"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":72,"station_counts":{"total":151,"fuels":{"E85":{"total":0},"ELEC":{"total":144,"stations":{"total":65}},"HY":{"total":0},"LNG":{"total":0},"BD":{"total":0},"CNG":{"total":0},"LPG":{"total":7}}},"offset":0,"fuel_stations":[{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":77940,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"UNIV
+        OF DENVER","station_phone":"888-758-4389","updated_at":"2017-05-17T08:24:36Z","geocode_status":"GPS","latitude":39.6799646,"longitude":-104.9639084,"city":"Denver","intersection_directions":"STURM
+        HALL 1","plus4":null,"state":"CO","street_address":"2032-2054 S Race St","zip":"80210","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:126445"]},"distance":0.06961},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":76122,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"UNIV
+        OF DENVER","station_phone":"888-758-4389","updated_at":"2017-05-17T08:13:31Z","geocode_status":"GPS","latitude":39.6797519,"longitude":-104.9613496,"city":"Denver","intersection_directions":"LAW
+        GARAGE 1; Located near the elevators on P1","plus4":null,"state":"CO","street_address":"2054-2062
+        S Gaylord St","zip":"80210","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:148773"]},"distance":0.1008},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":76126,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"UNIV
+        OF DENVER","station_phone":"888-758-4389","updated_at":"2017-05-17T08:19:22Z","geocode_status":"GPS","latitude":39.6779646,"longitude":-104.9641587,"city":"Denver","intersection_directions":"EVANS
+        GARAGE 1; Located near the 2nd floor Stairs & Elevator","plus4":null,"state":"CO","street_address":"1942-1998
+        Evans Ave","zip":"80210","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:132203"]},"distance":0.10135},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":76125,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"UNIV
+        OF DENVER","station_phone":"888-758-4389","updated_at":"2017-05-17T08:19:19Z","geocode_status":"GPS","latitude":39.6737283,"longitude":-104.9601998,"city":"Denver","intersection_directions":"P
+        GARAGE 1; Near 2nd Floor ","plus4":null,"state":"CO","street_address":"2300-2398
+        S York St","zip":"80210","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:132235"]},"distance":0.40636},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":81583,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"KENTPLACE1","station_phone":"888-758-4389","updated_at":"2017-05-17T07:58:45Z","geocode_status":"GPS","latitude":39.6544321,"longitude":-104.9610187,"city":"Englewood","intersection_directions":"GAYLORD
+        ST1","plus4":null,"state":"CO","street_address":"3465 S Gaylord Ct","zip":"80113","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:182133"]},"distance":1.71085},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":80842,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"BMW
+        OF DENVER","station_phone":"888-758-4389","updated_at":"2017-05-17T08:47:46Z","geocode_status":"200-8","latitude":39.697613,"longitude":-104.940627,"city":"Denver","intersection_directions":"DC
+        FAST 01; Back/East side of building\nDC FAST 02; Service Entrance on North
+        Side of building\nDC FAST 03\nSTATION 03; -","plus4":null,"state":"CO","street_address":"1040
+        S Colorado Blvd","zip":"80246","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772COMBO","J1772"],"ev_dc_fast_num":3,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:111871","1:111729","1:110955","1:102981"]},"distance":1.74666},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":61641,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"BMW
+        OF DENVER","station_phone":"888-758-4389","updated_at":"2017-05-17T09:02:26Z","geocode_status":"200-8","latitude":39.700209,"longitude":-104.940607,"city":"Denver","intersection_directions":"STATION
+        02\nSTATION 01","plus4":null,"state":"CO","street_address":"900 S Colorado
+        Blvd","zip":"80246","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":4,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:95631","1:95647"]},"distance":1.88174},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":65401,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"MURRAY
+        BMW 1","station_phone":"888-758-4389","updated_at":"2017-05-17T08:55:10Z","geocode_status":"200-9","latitude":39.70019,"longitude":-104.937647,"city":"Denver","intersection_directions":"STATION
+        SA02\nSTATION SA01","plus4":null,"state":"CO","street_address":"4350 E Kentucky
+        Ave","zip":"80246","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:104329","1:104363"]},"distance":1.98498},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":73325,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"ALTA
+        CHERRY HLS","station_phone":"888-758-4389","updated_at":"2017-05-17T08:21:17Z","geocode_status":"GPS","latitude":39.650637,"longitude":-104.9867066,"city":"Englewood","intersection_directions":"WEST
+        1; For residents and guests only","plus4":null,"state":"CO","street_address":"3601-3649
+        S Lincoln St","zip":"80113","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:129437"]},"distance":2.33734},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":70717,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"KEW
+        REALTY","station_phone":"888-758-4389","updated_at":"2017-05-17T08:27:13Z","geocode_status":"GPS","latitude":39.7110993,"longitude":-104.9422169,"city":"Denver","intersection_directions":"300
+        S JACKSON 1","plus4":null,"state":"CO","street_address":"300 S Jackson St","zip":"80209","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:124237"]},"distance":2.4672}]}'
+    http_version: 
+  recorded_at: Wed, 17 May 2017 17:05:38 GMT
+recorded_with: VCR 3.0.3

@@ -2,15 +2,17 @@ require 'rails_helper'
 
 RSpec.feature "searches for nearest stations" do
   scenario 'as a user' do
-    visit '/'
+    VCR.use_cassette('feature_search') do
+      visit '/'
 
-    within '.form-inline' do
-      fill_in('query', :with => "80210")
-      click_on 'Locate'
+      within '.form-inline' do
+        fill_in('query', :with => "80210")
+        click_on 'Locate'
+      end
+
+      assert_equal 200, page.status_code
+      expect(current_path).to eq('/search')
     end
-
-    assert_equal 200, page.status_code
-    expect(current_path).to eq('/search')
   end
 
 end
